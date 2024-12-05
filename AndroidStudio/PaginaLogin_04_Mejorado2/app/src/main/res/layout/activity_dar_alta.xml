@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/soft_cream"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Pizzeria Dar de ALta"
+        android:textColor="@color/tomato_red"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/basil_green"
+        android:textStyle="bold"
+        android:height="50sp"
+        android:gravity="center"
+        android:layout_marginBottom="60dp"
+        android:textSize="24sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Username"
+        android:id="@+id/nombreUsuarioRegister"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/passwordUsuarioRegister"/>
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver atras"
+        android:backgroundTint="@color/charcoal_black"
+        android:id="@+id/registervolver"/>
+
+</LinearLayout>

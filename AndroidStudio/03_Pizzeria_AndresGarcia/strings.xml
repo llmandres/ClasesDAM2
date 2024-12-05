@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">03_Pizzeria</string>
+    <string name="Ingredientes">Ingredientes Pizza</string>
+    <string name="Tamanio">Tamanio Pizza</string>
+</resources>

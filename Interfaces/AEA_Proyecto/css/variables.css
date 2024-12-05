@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url('../assets/fonts/Pokemon_GB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+         /* Fonts  */
+         --font-family: 'Pokemon';
+         --font-size-pequeño: 0.8rem;
+         --font-size-medio: 1rem;
+         --font-size-grande: 1.5rem;
+
+        /* Primary (Turquesa ) */
+        --color-primary-really-dark: #0D3D47;
+        --color-primary-dark: #1A7994;
+        --color-primary-normal: rgb(84, 222, 253);
+        --color-primary-light: #97ECFF;
+        --color-primary-really-light: #D6F9FF;
+    
+        /* Secondary (Morado ) */
+        --color-secondary-really-dark: #250343;
+        --color-secondary-dark: #44087A;
+        --color-secondary-normal: #6A0DAD;
+        --color-secondary-light: #9A55D3;
+        --color-secondary-really-light: #CDAAEF;
+    
+        /* Accent (Amarillo ) */
+        --color-accent-really-dark: #6E5107;
+        --color-accent-dark: #B08E12;
+        --color-accent-normal: #F5C518;
+        --color-accent-light: #FADC5F;
+        --color-accent-really-light: #FFF5C4;
+    
+        /* 3rd (Verde ) */
+        --color-3rd-really-dark: #013627;
+        --color-3rd-dark: #02664B;
+        --color-3rd-normal: #00A676;
+        --color-3rd-light: #6CE0BA;
+        --color-3rd-really-light: #C2F6E5;
+
+        /* Variables de Gradientes */
+        --gradiente-fondo: linear-gradient(45deg, rgba(57,62,65,1) 21%, rgba(209,210,249,1) 69%);
+        --gradiente-alterno: linear-gradient(45deg, rgba(100,62,65,1) 21%, rgba(10,210,249,1) 69%);
+
+        /* Variables de Espaciados */
+        --espaciado-pequeño: 0.5rem;
+        --espaciado-medio: 1rem;
+        --espaciado-grande: 2rem;
+        --espaciado--extra: 10em;
+        --ancho-card: 35rem;
+        --alto-card: 28rem;
+
+}

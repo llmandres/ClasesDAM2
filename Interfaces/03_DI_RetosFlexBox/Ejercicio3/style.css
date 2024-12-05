@@ -1,0 +1,40 @@
+html, body {
+    height: 100%; 
+    width: 100%; 
+    margin: 0;
+    padding: 0.2em;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 0;
+    margin-left: 0;
+}
+
+.container {
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 2em;
+}
+
+
+hr {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.esfera {
+    border-radius: 50%; 
+    width: 7em;
+    height: 7em;
+    background-color: red;
+    margin-right: 1rem; 
+}
+
+.texto {
+    font-size: 2em;
+    display: flex;
+    gap: 4em;
+}

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_cream"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:padding="3sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/gray"
+        android:text="Pizzeria"
+        android:textAlignment="center"
+        android:textColor="@color/tomato_red"
+        android:backgroundTint="@color/basil_green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre usuario: "
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:height="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dirección: "
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/direccion"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:height="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/tomato_red"
+            android:text="Tamaño"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/rgGrupo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:text="Grande"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:id="@+id/radiusBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:text="Mediana"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:id="@+id/radiusMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:text="Pequeña"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:id="@+id/radiusSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <TextView
+            android:textColor="@color/tomato_red"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_marginLeft="20dp"
+                android:text="Aceitunas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_marginLeft="20dp"
+                android:text="Piña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_marginLeft="20dp"
+                android:text="Pepperoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_marginLeft="20dp"
+                android:text="Jamón"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:textStyle="bold"
+        android:backgroundTint="@color/cheesy_yellow"
+        android:textColor="@color/black"
+        android:id="@+id/preciobutton"
+        android:text="Calcular Precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/basil_green"
+        android:id="@+id/resultado"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:text="Precio a pagar :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
