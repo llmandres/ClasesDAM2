@@ -1,0 +1,184 @@
+
+.titulo {
+    font-size: 1.5em;
+    margin-left: 20em;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+    color: rgb(61, 57, 57);
+    font-weight: bold;
+}
+.sale{
+    padding: 0.1em;
+    background-color: rgb(37, 110, 103);
+    color: white;
+    position: absolute;
+    font-size: 1.5em;
+    top: 15%;
+}
+.bloque{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.input{
+    width: 25em;
+    height: 3em;
+    font-size: 1em;
+    color: gray;
+}
+.showin {
+    align-self: flex-end;
+    color: gray;
+}
+
+.Barra {
+    margin-left: 68em;
+    display: flex; 
+    gap: 2em; 
+    align-items: flex-start; 
+    flex-wrap: wrap;
+}
+.clear{
+    font-size: 1.5em;
+    color: rgb(71, 61, 61);
+    width: 5em;
+}
+
+.caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border: 1px solid black;
+    width: 9.9em;
+    height: 2.5em;
+    padding: 0 1em; 
+    font-size: 1.2em;
+}
+.cajashoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    border: 1px solid black;
+    width: 7.8em;
+    height: 2.5em;
+    padding: 0 1em; 
+    font-size: 1.2em;
+}
+.cajamen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    border: 1px solid black;
+    width: 8em;
+    height: 2.5em;
+    padding: 0 1em; 
+    font-size: 1.2em;
+}
+
+.X {
+    width: 2em;
+    height: 100%;
+    background-color: #2c3e50; 
+    color: white;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin-left: 3.4em;
+}
+
+.cajaResults {
+    font-size: 1.2em;
+    padding: 0.3em;
+    margin-left: 8em;
+    width: 20em;
+    display: flex;
+    justify-content: flex-start;
+    color: gray;
+}
+.cajaZapatilla {
+    position: relative;
+    width: 25em;
+    width: 25em;
+    height: 34em;
+    display: flex;
+    flex-direction: column;
+}
+.corazon{
+    position: absolute;
+    top: 9%;
+    left: 82%;
+    width: 2em;
+    height: 2em;
+}
+
+
+.cajaGrupo {
+    justify-content: flex-start;
+    gap: 2em;
+    margin-right: 25em;
+    display: flex;
+    flex-direction: row;
+    margin-left: 60em;
+    flex-wrap: wrap;
+}
+
+.texto {
+    background-color: white;
+    margin-left: 1.2em;
+}
+.foto1{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.migatitopepo.es/5052-large_default/zapatilla-alta-lona-blanca.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.foto2{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQraCdA5hQnaGcXMBZ-NRDf7A4wGrArlOPJxmSD83e9ULutUo6nEWMYtEhtZPGTnE5eM_o&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.foto3{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://podoservice.es/4428-large_default/zapatilla-trabajo-skechers-fit-uno-mujer-blanco.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.foto4{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.izapatillas.com/29867-large_default/zapatilla-munich-mundial-versus-36-alemania-blanca-roja.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.foto5{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.calzadosgayoso.com/16987-large_default/zapatilla-de-casa-cerrada-65683-la-cadena-en-color-gris-marron-o-vison.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.foto6{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://yuccs.com/cdn/shop/products/Ncuadrarte-Estudio---Yuccs-Calzado---Zapatilla-3---2-copia_88b31eda-59c3-4852-a860-1d09e97bf3aa.png?v=1631918537");
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}

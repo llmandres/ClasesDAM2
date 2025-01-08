@@ -1,0 +1,35 @@
+.container{
+    height: 200px;
+    width: 360px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.rectangulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: aquamarine;
+    border-radius: 16px;
+    border: 1px solid black;
+    flex-basis: 500px;
+}
+.modificado{
+    align-self: center;
+}
+.uno{
+    flex-shrink: 2;
+}
+.dos{
+    flex-shrink: 2;
+}
+.tres{
+    flex-shrink: -1;
+}
+
+
