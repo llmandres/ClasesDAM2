@@ -1,8 +1,19 @@
 package modelo.entidad;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
 public class Pelicula {
 	private String titulo;
+	@Autowired
 	private Director director;
+	@Autowired
+	// "@Qualifier nos sirve para inyectar un bean en especifico pasandole la id
+	@Qualifier("personaBean")
 	private Persona productor;
 	
 	

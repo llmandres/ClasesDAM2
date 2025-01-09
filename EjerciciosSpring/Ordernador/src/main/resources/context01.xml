@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	 
+	 <bean id="Ordenador" class="modelo.entidad.Ordenador">
+	 	<property name="procesador" ref="procesador"></property>
+	  	<property name="tarjetaGrafica" ref="tarjetaGrafica"></property>
+	   	<property name="placaBase" ref="placaBase"></property>
+	    <property name="RAM" ref="RAM"></property>
+	   	<property name="listaPerifericos" ref="listaPerifericos"></property>
+	   	 <property name="precio" value="6000"></property>
+	 </bean>
+	 
+	  <bean id="procesador" class="modelo.entidad.Procesador">
+	  	<property name="marca" value="ASUS"></property>
+	  	<property name="modelo" value="ASUS"></property>
+	   	<property name="numeroNucleos" value="10"></property>
+	   	 <property name="precio" value="1000"></property>
+	  </bean>
+	  
+	  <bean id="tarjetaGrafica" class="modelo.entidad.TarjetaGrafica">
+	  	<property name="marca" value="NVIDIA"></property>
+	  	<property name="modelo" value="NVIDIA"></property>
+	   	<property name="nucleosCUDA" value="20"></property>
+	   		 <property name="precio" value="1000"></property>
+	  </bean>
+	  
+	  <bean id="placaBase" class="modelo.entidad.PlacaBase">
+	  	<property name="marca" value="MSI"></property>
+	  	<property name="tipo" value="Tomahawk"></property>
+	  		 <property name="precio" value="1000"></property>
+	  </bean>
+	  
+	  <bean id="RAM" class="modelo.entidad.RAM">
+	   	<property name="marca" value="MSI"></property>
+	  	<property name="capacidad" value="16"></property>
+	  		 <property name="precio" value="1000"></property>
+	  </bean>
+	  
+	  <bean id="listaPerifericos" class="java.util.ArrayList">
+    	<constructor-arg>
+        	<list>
+	            <ref bean="periferico1"/>
+	            <ref bean="periferico2"/>
+       		 </list>
+   		 </constructor-arg>
+	  </bean>
+	  
+	  <bean id="periferico1" class="modelo.entidad.Periferico">
+	  	<property name="marca" value="HyperX"></property>
+	  	<property name="tipo" value="Teclado"></property>
+	  	<property name="precio" value="1000"></property>
+	  </bean>
+	  	  
+	  <bean id="periferico2" class="modelo.entidad.Periferico">
+	  	<property name="marca" value="HyperX"></property>
+	  	<property name="tipo" value="Mouse"></property>
+	  	<property name="precio" value="1000"></property>
+	  </bean>
+
+	 
+</beans>
