@@ -1,4 +1,4 @@
-package main;
+package main.coche;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -6,7 +6,7 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import modelo.entidad.Coche;
 
-public class MainJPABorrar {
+public class MainJPAModificar {
 
 	public static void main(String[] args) {
 		
@@ -15,19 +15,18 @@ public class MainJPABorrar {
 		System.out.println("Entity Manager Creado");
 		
 		Coche coche = new Coche();
-
+		coche.setId(1);
+		coche.setMarca("Toyota");
+		coche.setModelo("Supra");
+		coche.setKm(75000);
 		
 		EntityTransaction tx =  em.getTransaction();
 		
 		tx.begin();
-		coche = em.find(Coche.class, 1);
-		em.remove(coche);
-		coche = em.find(Coche.class, 1);
-		System.out.println(coche);
+		em.merge(coche); // Update
 		
 		// Cerramos
 		tx.commit();
-		//Si se cierra, automaticamente hace commit
 		em.close();
 	}
 

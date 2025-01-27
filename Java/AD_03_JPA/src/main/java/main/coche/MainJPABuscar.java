@@ -1,4 +1,4 @@
-package main;
+package main.coche;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
