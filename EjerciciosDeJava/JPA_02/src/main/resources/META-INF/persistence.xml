@@ -8,7 +8,7 @@
 			<!-- Tenemos una seríe de parámetros mínimos que decirle a JPA para que se pueda
 			contectar a la BBDD -->
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa_coches"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa_coches3"/>
 			<property name="javax.persistence.jdbc.user" value="root"/>
 			
 			<!-- Nota: El Schema de BBDD (jpa_persona, en este caso) debe de estar creado -->
