@@ -23,10 +23,10 @@ public class Editorial {
     private String nombre;
     private String direccion;
 
-    @OneToMany(mappedBy = "editorial", cascade = CascadeType.PERSIST) // Cascade PERSIST on relation with Libro
+    @OneToMany(mappedBy = "editorial", cascade = CascadeType.PERSIST) 
     private List<Libro> listaLibros;
 
-    // Constructor vacío y constructor con parámetros
+  
     public Editorial() {
     }
 

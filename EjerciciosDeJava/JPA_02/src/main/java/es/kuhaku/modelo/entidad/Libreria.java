@@ -1,6 +1,7 @@
 package es.kuhaku.modelo.entidad;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -24,10 +25,10 @@ public class Libreria {
     private String nombreDueno;
     private String direccion;
 
-    @ManyToMany(cascade = CascadeType.PERSIST) // Cascade PERSIST on relation with Libro
+    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER) 
     private List<Libro> listaLibros;
 
-    // Constructor vacío y constructor con parámetros
+
     public Libreria() {
     }
 

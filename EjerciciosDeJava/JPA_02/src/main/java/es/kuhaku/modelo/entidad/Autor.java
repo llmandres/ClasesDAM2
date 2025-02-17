@@ -1,6 +1,7 @@
 package es.kuhaku.modelo.entidad;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -24,15 +25,16 @@ public class Autor {
     private String apellidos;
     private String fechaNacimiento;
 
-    @OneToMany(mappedBy = "autor", cascade = CascadeType.PERSIST) // Cascade PERSIST on relation with Libro
+    @OneToMany(mappedBy = "autor", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private List<Libro> listaLibros;
 
     public Autor() {
     }
 
-    public Autor(String nombre, String apellidos, String fechaNacimiento) {
+    public Autor(String nombre, String apellidos, String fechaNacimiento, List<Libro> listalibro) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fechaNacimiento = fechaNacimiento;
+        this.listaLibros = listalibro;
     }
 }
