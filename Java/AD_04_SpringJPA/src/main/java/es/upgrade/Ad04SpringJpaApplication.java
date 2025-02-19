@@ -32,6 +32,7 @@ public class Ad04SpringJpaApplication {
 			Munion m2 = optional.get();
 			System.out.println(m2);
 		}
+		m = mdao.findByNom
 		
 	}
 
